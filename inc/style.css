@@ -1,0 +1,103 @@
+body{
+    background-color: blueviolet;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+@media only screen and (max-width:414px) {
+    body {
+      background-color: #FFFFFF;;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /********* nav menu *******/
+    #Nav-Logo{
+        /*width: 100%;*/
+        margin-top:4%;
+        display: flex;        
+        justify-content: space-around;        
+
+    }
+    .content-text, #Nav-Logo{
+        margin-left: 4%;
+        /*margin-right: 7%;*/
+        /*width: 100%;*/
+    }  
+    
+
+    /******* section entete et text   *********/
+   
+    .content-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    #Sub-heading{
+        
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 17px;
+
+        color: #000000;
+
+    }
+    
+    #slogan{       
+
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 62px;
+
+        color: #000000;
+    }
+  
+
+   
+    /***********  section image   ***********/
+    .content-img{        
+        text-align: center;
+    }
+
+    #AdobeStock_335161323{          
+        border-radius: 0px 8px 8px 0px;
+    }
+
+    /**********  button *************/
+    .button_sign{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section > .cta{
+        background-color: #FE142F;
+        width: 141px;
+        height: 31px;
+        border-radius: 8px;
+        border: none;
+        font-size: 0.9em;
+        color : white;
+    }
+
+    /******** Footer ***********/
+    #_Footer{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    #_Footer > p{
+        font-size: 0.8em;
+    }
+
+}

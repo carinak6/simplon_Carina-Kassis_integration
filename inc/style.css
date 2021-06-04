@@ -4,6 +4,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
 }
 /********* nav menu *******/
@@ -11,11 +12,12 @@ body{
     /*width: 100%;*/
     margin-top:4%;
     display: flex;        
-    justify-content: space-around;        
+    justify-content: space-around;    
+    align-items: baseline;    
 
 }
 .content-text, #Nav-Logo{
-    margin-left: 4%;
+    /*margin-left: 4%;*/
     /*margin-right: 7%;*/
     /*width: 100%;*/
 } 
@@ -61,7 +63,7 @@ body{
     border-radius: 0px 8px 8px 0px;
 }
 
-.content-text, #Nav-Logo{
+.content-text, main{
     margin-left: 4%;
     /*margin-right: 7%;*/
     /*width: 100%;*/
@@ -160,7 +162,7 @@ smartphone
 @media only screen and (min-width:415px) {
     /**/
     body {
-        background-color: blueviolet;
+        /*background-color: blueviolet;*/
       
     }
     
@@ -168,13 +170,65 @@ smartphone
     
     #menu{
         display: flex;
+        
     }
+    #menu>ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+
+    #menu>ul>li{
+        padding: 10px;
+    }
+    
+
+    #menu>ul>li>a{
+        text-decoration: none;
+        padding: 20px;
+        color: black;
+        margin-right: 10px;
+    }
+
+    /* #menu>ul>li:active{
+        background-color: red;
+        color: white;
+    } */
+    
 
     #_nav{
          display: none;
      }
     
-    
+    /************* main  *******/
+    main{
+        position :relative;
+        background-color: black;
+        
+        width: 80%;
+        height: 400px;
+
+        /*display: flex;
+        flex-direction: column;*/
+    }
+    .content-img{
+        position: absolute;
+        width: 70%;
+        z-index: 1;
+    }
+    .content-text{
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        font-size: 150%;
+        top:50px;
+        
+    }
+
+    #slogan, #Sub-heading{
+        color:white;
+    }
 
     /**********  button *************/
     /* a changer*/
@@ -194,7 +248,6 @@ smartphone
         font-size: 0.9em;
         color : white;
     }
-
     
 
 }
@@ -207,6 +260,10 @@ smartphone
     }
     
     /********* nav menu *******/
+    #Nav-Logo{
+        width: 90%;
+        justify-content: space-between; 
+    }
     #menu{
         display: none;
         position : absolute;
@@ -239,7 +296,7 @@ smartphone
         display: flex;
     }
 
-  
+    /*********  main **********/
 
     /**********  button *************/
     .button_sign{
